@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes UI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            height: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+            flex-grow: 1;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+    background-color: #338ce4;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.navbar {
+            width: 100%;
+            background-color: #338ce4 !important;
+        }
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Student Stride</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://student-stride-internship.vercel.app/">Internship</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.studentstride.in/course/cousre%20code/Courses&Certificate.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.studentstride.in/#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="container">
+        <h1 class="title">Programming Notes</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="python.png" alt="Python Notes">
+                <h2>Python Notes</h2>
+                <p>Chapterwise Python notes for structured learning.</p>
+                <a href="https://drive.google.com/drive/folders/1p2_45Vf4o1eI2gvWf8YmhEs_pC3USmcB?usp=sharing" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="c notes.png" alt="C Notes">
+                <h2>C Notes</h2>
+                <p>Chapterwise C programming notes for beginners.</p>
+                <a href="https://drive.google.com/drive/folders/12LK_3aORIFuv_ED6Kd5kvFIKCG8-RjZ3?usp=drive_link" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="android.png" alt="Android Notes">
+                <h2>Android Notes</h2>
+                <p>Chapterwise Android development notes with examples.</p>
+                <a href="https://drive.google.com/drive/folders/1PIm2rrDBu3l7l65fNmMRLXSgeZLIYoqk?usp=sharing" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="java.png" alt="Java Notes">
+                <h2>Java Notes</h2>
+                <p>Chapterwise Java notes covering core and advanced topics.</p>
+                <a href="https://drive.google.com/drive/folders/1Ee_qGwgFDe6v9kXnCKegYlS77mtq3yDG?usp=sharing" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="html.png" alt="HTML Notes">
+                <h2>HTML Notes</h2>
+                <p>Chapterwise HTML notes for web development.</p>
+                <a href="https://drive.google.com/drive/folders/1gxbw8qT5zGhjr1QafrG-IlfmjiIDlL23?usp=sharing" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="css.png" alt="CSS Notes">
+                <h2>CSS Notes</h2>
+                <p>Chapterwise CSS notes for styling web pages.</p>
+                <a href="https://drive.google.com/drive/folders/1mBi_aWQQX1FieZbZuX9GOmk_QWRzdpH6?usp=sharing" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="dsa.png" alt="DSA Notes">
+                <h2>DSA Notes</h2>
+                <p>Chapterwise Data Structures and Algorithms notes.</p>
+                <a href="https://drive.google.com/drive/folders/1j3gTGQma5p-J5zz3KC-VrUEd2EhAq94n?usp=sharing" class="btn">View Notes</a>
+            </div>
+            <div class="card">
+                <img src="js.png" alt="JavaScript Notes">
+                <h2>JavaScript Notes</h2>
+                <p>Chapterwise JavaScript notes with structured examples.</p>
+                <a href="https://drive.google.com/drive/folders/1AuURnMKLxCabjFy4O8TbfTXzstruWYjl?usp=sharing" class="btn">View Notes</a>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h1 class="title">Download Handbooks of Code With Harry</h1>
+        <div class="cards">
+            <div class="card">
+                <img src="python1.png" alt="Python Notes">
+                <h2>Python Handbook</h2>
+                <a href="https://drive.google.com/file/d/13l7_D3PuMyORjD75I9W6_Jw33IeEwBj0/view?usp=sharing" class="btn">View Book</a>
+            </div>
+            <div class="card">
+                <img src="c notes1.png" alt="C Notes">
+                <h2>C Handbook</h2>
+                <a href="https://drive.google.com/file/d/1ko8jA2C-VumYstf-lOIAP3LgjyCCxn2k/view?usp=sharing" class="btn">View Book</a>
+            </div>
+            <div class="card">
+                <img src="html1.png" alt="Android Notes">
+                <h2>HTML Handbook</h2>
+                <a href="https://drive.google.com/file/d/1Fe70gpC4h0lu_Ew1UAYi-bwgj8dqd-pP/view?usp=sharing" class="btn">View Book</a>
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Student Stride. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
