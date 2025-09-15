@@ -104,9 +104,6 @@ Enjoy free courses, projects, and resources to kickstart your journey to becomin
 
 <header class="hero text-center position-relative">
   <div class="container position-relative">
-      <h1 class="fw-bold"></h1>
-      <p class="lead fw-semibold">
-      </p>
       <a href="https://job-portal-xi-one.vercel.app/" class="btn btn-lg btn-primary mt-3">Apply Now</a>
   </div>
 </header>
@@ -124,60 +121,27 @@ body {
   background: url('BANNERJOBNEST.png') no-repeat center center;
   background-size: cover;
   color: white;
-  min-height: 80vh; /* Larger banner height */
+  height: 50vh; /* Half screen height */
   display: flex;
-  align-items: center;
+  align-items: flex-end; /* Push content to bottom */
   justify-content: center;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   margin: 20px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 60px 15px;
+  padding: 20px;
   position: relative;
-}
-
-/* Light Overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 12px;
 }
 
 /* Text container */
 .hero .container {
   position: relative;
   z-index: 2;
-  max-width: 900px;
-}
-
-/* Heading */
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-/* Paragraph */
-.hero p {
-  font-size: 1.25rem;
-  margin: 0 auto 20px;
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.5px;
-  width: 90%;
   text-align: center;
 }
 
 /* Button */
 .hero .btn {
-  margin-top: 15px;
   border-radius: 8px;
   padding: 14px 28px;
   font-size: 1.1rem;
@@ -195,16 +159,7 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
-    min-height: 70vh;
-    padding: 40px 15px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
+    height: 45vh;
   }
 
   .hero .btn {
@@ -215,16 +170,7 @@ body {
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 65vh;
-    padding: 30px 10px;
-  }
-
-  .hero h1 {
-    font-size: 1.6rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
+    height: 40vh;
   }
 
   .hero .btn {
@@ -233,6 +179,7 @@ body {
   }
 }
 </style>
+
 
 
 
