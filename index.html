@@ -104,10 +104,13 @@ Enjoy free courses, projects, and resources to kickstart your journey to becomin
 
 <header class="hero text-center position-relative">
   <div class="container position-relative">
-      <a href="https://job-portal-xi-one.vercel.app/" class="btn btn-lg btn-primary mt-3">Apply Now</a>
+      <a href="https://job-portal-xi-one.vercel.app/" class="btn btn-lg btn-primary mt-3 desktop-btn">Apply Now</a>
   </div>
-  <!-- Mobile clickable image -->
-  <a href="https://job-portal-xi-one.vercel.app/" class="mobile-banner-link"></a>
+
+  <!-- Mobile image as button -->
+  <a href="https://job-portal-xi-one.vercel.app/" class="mobile-banner-link">
+    <img src="BANNERJOBNEST.png" alt="JobNest Banner" />
+  </a>
 </header>
 
 <style>
@@ -118,81 +121,71 @@ body {
   padding: 0;
 }
 
-/* Hero Section */
+/* Hero Section (Desktop) */
 .hero {
   background: url('BANNERJOBNEST.png') no-repeat center center;
   background-size: cover;
-  color: white;
-  height: 35vh; /* 35% of screen height */
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  height: 35vh;
   border-radius: 12px;
   margin: 20px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   position: relative;
-}
-
-/* Text container */
-.hero .container {
-  position: relative;
-  z-index: 2;
-  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 /* Desktop Button */
-.hero .btn {
+.desktop-btn {
   border-radius: 8px;
   padding: 14px 28px;
   font-size: 1.1rem;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
   font-family: 'Poppins', sans-serif;
+  z-index: 2;
 }
 
-.hero .btn:hover {
+.desktop-btn:hover {
   background-color: #0044cc;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile clickable overlay link */
+/* Mobile Banner Link (Image) */
 .mobile-banner-link {
-  display: none; /* Hidden by default */
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: none;
+}
+
+.mobile-banner-link img {
   width: 100%;
   height: 100%;
-  z-index: 3;
+  object-fit: cover;  /* Keeps text on image visible properly */
+  border-radius: 12px;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero {
-    height: 30vh;
+    background: none; /* Remove background image */
+    height: auto;
     padding: 0;
-    align-items: center;
-    justify-content: center;
+    margin: 20px;
+    display: block;
   }
 
-  .hero .btn {
-    display: none; /* Hide button */
+  .desktop-btn {
+    display: none; /* Hide button on mobile */
   }
 
   .mobile-banner-link {
-    display: block; /* Make entire image clickable */
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    height: 28vh;
+    display: block; /* Show clickable image */
   }
 }
 </style>
+
 
 
 
